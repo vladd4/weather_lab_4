@@ -1,0 +1,30 @@
+{{> header}}
+    <div class="weather-card">
+        <h1>{{city}}</h1>
+        
+        <img 
+            src="http://openweathermap.org/img/wn/{{weatherIcon}}@2x.png" 
+            alt="{{weatherDescription}}" 
+            class="weather-icon"
+        >
+        
+        <div class="weather-description">
+            Опис погодніх умов: {{weatherDescription}}
+        </div>
+        
+        <div class="weather-data">
+            Температура: {{temperature}}°C
+        </div>
+        
+        <div class="weather-data">
+            Вологість: {{humidity}}%
+        </div>
+        
+        <div class="weather-data">
+            Тиск: {{pressure}} hPa
+        </div>
+
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
